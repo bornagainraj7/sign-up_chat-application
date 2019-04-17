@@ -41,7 +41,7 @@ export class AppService {
  public signupFunction(data): Observable<any> {
 
     
-  const data = {
+  const userData = {
 
     firstName: this.firstName,
 
@@ -58,7 +58,7 @@ export class AppService {
   };
     
     
-    return this.http.post(`${this.url}/api/v1/users/signup`,data);
+    return this.http.post(`${this.url}/api/v1/users/signup`, userData);
 
   }
   public signinFunction(data): Observable<any> {
